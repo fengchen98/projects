@@ -30,6 +30,7 @@ public class MVCController {
 
     //请求重定向（临时重定向）
     //URL地址放生了改变
+    //能够正常获取外部资源
     @RequestMapping("/index2")
     public String getIndex2(){
         return "redirect:/index.html";

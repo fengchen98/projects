@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登陆页面</title>
+    <title>注册页面</title>
     <link rel="stylesheet" href="css/conmmon.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
+<form id="form1" action="/api/user/reg" method="post" enctype="multipart/form-data">
+
     <!-- 导航栏 -->
     <div class="nav">
         <img src="img/logo2.jpg" alt="">
@@ -26,36 +28,48 @@
     <div class="login-container">
         <!-- 中间的登陆框 -->
         <div class="login-dialog">
-            <h3>登录</h3>
+            <h3>注册</h3>
             <div class="row">
                 <span>用户名</span>
-                <input type="text" id="username">
+                <input type="text" id="username" name="username">
             </div>
+
             <div class="row">
                 <span>密码</span>
-                <input type="password" id="password">
+                <input type="password" id="password" name="password">
             </div>
+
+            <div class="row">
+                <span>确认密码</span>
+                <input type="password" id="password2" name="password2">
+            </div>
+
+            <div class="row">
+                <span>头像</span>
+                <input type="file" id="file" name="file">
+            </div>
+
             <div class="row">
                 <button id="submit" onclick="mysub()">提交</button>
             </div>
+
         </div>
     </div>
+
+</form>
 </body>
 <script src="js/jquery.min.js"></script>
 <script>
     function mysub() {
-        jQuery.getJSON("/api/user/login",
-            {"username":jQuery("#username").val().trim(),
-                "password":jQuery("#password").val().trim()},
-             function (data) {
-            // if (data!=null && data.status==0){
-            //     alert(data.data);
-            // }else {
-            //     alert("未知错误");
-            // }
-                 alert(data.data);
-                 location.href="index.html";
-         });
+        var password=jQuery("#password").val().trim();
+        var password2=jQuery("#password2").val().trim();
+        if (password!="" && password2!="" && password1!=password2){
+            alert("两次输入的密码不一致");
+            return false;
+        }
+
+        jQuery("#form1").submit();
+
     }
 </script>
 </html>
