@@ -1,10 +1,12 @@
 package com.example.demo.controller;
 
 import com.example.demo.config.AppFinal;
+import com.example.demo.mapper.UserMapper;
 import com.example.demo.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.bind.annotation.CookieValue;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;
@@ -30,6 +33,8 @@ import java.util.UUID;
 @Controller
 @Slf4j
 public class UserController {
+    @Resource
+    private UserMapper userMapper;
 
     //private Logger logger= LoggerFactory.getLogger(UserController.class);
     @RequestMapping("/index")
@@ -71,15 +76,28 @@ public class UserController {
 
         //1.获取当前项目的路径
         String path= ClassUtils.getDefaultClassLoader().getResource("static").getPath();
-        path+="/upload/";
+        path+=AppFinal.IMAGE_PATH;
         log.info("path:"+path);
         //2.文件名
         String fileType=file.getOriginalFilename();
         fileType=fileType.substring(fileType.lastIndexOf("."));
         String fileName= UUID.randomUUID().toString()+fileType;
-
+        //将文件保存到服务器
         file.transferTo(new File(path+fileName));
-        return "redirect:/api/regsuccess.html";
+        //
+        User user=new User();
+        user.setUsername(username);
+        user.setPassword(password);
+        //设置头像地址
+        user.setPhoto(AppFinal.IMAGE_PATH+fileName);
+        int result=userMapper.addUser(user);
+        if (result>0){
+            return "redirect:/regsuccess.html";
+        }else {
+            return "redirect:/regerr.html";
+        }
+
+
 
     }
 
