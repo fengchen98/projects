@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客正文</title>
+    <link rel="stylesheet" href="css/conmmon.css">
+    <link rel="stylesheet" href="css/blog_content.css">
+</head>
+
+<body>
+<!-- 导航栏 -->
+<div class="nav">
+    <img src="img/logo2.jpg" alt="">
+    <span class="title">我的博客系统</span>
+    <!-- 用来占据中间位置 -->
+    <span class="spacer"></span>
+    <a href="blog_list.html">主页</a>
+    <a href="blog_edit.html">写博客</a>
+    <a href="login.html">登陆</a>
+</div>
+<!-- 版心 -->
+<div class="container">
+    <!-- 左侧个人信息 -->
+    <div class="container-left">
+        <div class="card">
+            <img id="phtotimg" src="" class="avtar" alt="">
+            <h3 id="name"></h3>
+            <a href="http:www.github.com">github 地址</a>
+            <div class="counter">
+                <span>文章</span>
+            </div>
+            <div class="counter">
+                <span id="acount">0</span>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧内容详情 -->
+    <div class="container-right">
+        <div class="blog-content">
+            <!-- 博客标题 -->
+            <h3 id="title"></h3>
+            <!-- 博客时间 -->
+            <div id="createtime" class="date"></div>
+            <!-- 博客正文 -->
+            <div id="content">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/mytools.js"></script>
+<script>
+    // 1.得到当前页面的文章id
+    var id = getParamValue("id");
+    if (id != null && id > 0) {
+        // 2.请求后端接口查询文章和用户信息
+        jQuery.getJSON(
+            "/api/art/detail",
+            {"id": id},
+            function (data) {
+                if (data != null && data.status == 0 &&
+                    data.data.id > 0) {
+                    // 文章已经正常查询到了
+                    // 文章和用户信息的动态赋值
+                    jQuery("#phtotimg").attr("src", data.data.user.photo);
+                    jQuery("#name").html(data.data.user.username);
+                    // 从url中取出文章发布的数量
+                    jQuery("#acount").text(getParamValue("acount"));
+                    // 设置文章标题
+                    jQuery("#title").html(data.data.title);
+                    // 设置文章发布时间
+                    var ctime = data.data.createtime; // 2021-07-13T..
+                    ctime = ctime.substring(0, ctime.indexOf("T"));
+                    jQuery("#createtime").html(ctime);
+                    // 设置文章的正文信息
+                    jQuery("#content").html(data.data.content);
+                } else {
+                    alert("抱歉操作失败，请重试！");
+                }
+            }
+        );
+    }
+</script>
+
+</html>

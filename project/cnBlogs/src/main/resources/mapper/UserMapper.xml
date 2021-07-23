@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.example.demo.model.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="photo" property="photo"/>
+        <collection property="alist" columnPrefix="a_"
+                    resultMap="com.example.demo.mapper.ArticleInfoMapper.BaseResultMap">
+        </collection>
+    </resultMap>
+    <insert id="addUser" parameterType="com.example.demo.model.User"
+            useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into userinfo(username,password,photo)
+        values(
+            #{username},#{password},#{photo}
+        )
+    </insert>
+
+    <select id="getUserById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select * from userinfo where id=#{uid}
+    </select>
+
+    <select id="getUserByNameAndPassword" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select * from userinfo where username=#{name} and password=#{password}
+    </select>
+
+    <select id="getAll" resultType="com.example.demo.model.User">
+        select * from userinfo
+    </select>
+
+    <select id="getList" resultType="com.example.demo.model.User">
+        select * from userinfo
+        order by id ${ord}
+    </select>
+
+    <select id="getListByName" resultType="com.example.demo.model.User">
+        select * from userinfo where username like '%${username}%'
+    </select>
+
+    <select id="getListByName2" resultType="com.example.demo.model.User">
+        select * from userinfo where username like concat('%',#{username},'%')
+    </select>
+
+    <select id="getFullUser" resultMap="BaseResultMap">
+        select u.*,a.id a_id,a.title a_title,a.content a_content,a.createtime a_createtime from userinfo u
+        left join articleinfo a on u.id=a.uid where u.id=#{id} order by a.id desc
+    </select>
+
+    <delete id="delById" parameterType="java.lang.Integer">
+        delete from userinfo where id=#{id}
+    </delete>
+
+    <update id="upUser">
+        update userinfo set
+        username=#{username}
+        where id=#{id}
+    </update>
+
+
+</mapper>

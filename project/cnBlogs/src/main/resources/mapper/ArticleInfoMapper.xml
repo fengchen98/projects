@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.ArticleInfoMapper">
+    <resultMap id="BaseResultMap" type="com.example.demo.model.ArticleInfo">
+        <id property="id" column="id"></id>
+        <result property="title" column="title"></result>
+        <result property="content" column="content"></result>
+        <result property="createtime" column="createtime"></result>
+        <result property="updatetime" column="updatetime"></result>
+        <result property="uid" column="uid"></result>
+        <result property="rcount" column="rcount"></result>
+        <result property="state" column="state"></result>
+        <association property="user"
+                     columnPrefix="u_"
+                     resultMap="com.example.demo.mapper.UserMapper.BaseResultMap">
+        </association>
+    </resultMap>
+
+    <insert id="addArticle">
+        insert into articleinfo(
+        title,
+        content,
+        uid
+        <trim prefix="," suffixOverrides=",">
+            <if test="rcount!=0">
+                rcount,
+            </if>
+            <if test="state!=0">
+                state,
+            </if>
+        </trim>
+        ) values(
+        #{title},
+        #{content},
+        #{uid}
+        <trim prefix="," suffixOverrides=",">
+            <if test="rcount!=0">
+                #{rcount},
+            </if>
+            <if test="state!=0">
+                #{state},
+            </if>
+        </trim>
+        )
+    </insert>
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id" keyColumn="id"
+            parameterType="com.example.demo.model.ArticleInfo">
+        insert into articleinfo(title,content,uid) values(
+            #{title},#{content},#{uid}
+        )
+    </insert>
+
+    <update id="upArticle">
+        update articleinfo
+        <set>
+            <if test="title!=null">
+                title=#{title},
+            </if>
+            <if test="content!=null">
+                content=#{content},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+
+    <delete id="delArticleByIds">
+        delete from articleinfo
+        where id in
+        <foreach collection="ids" item="item" separator="," open="(" close=")">
+            #{item}
+        </foreach>
+    </delete>
+
+    <delete id="delById" parameterType="java.lang.Integer">
+        delete from articleinfo where id=#{id}
+    </delete>
+
+
+    <!--    <select id="getAll" resultMap="BaseResultMap">-->
+    <!--        select a.*,u.username u_username,u.id u_id,u.password u_password from-->
+    <!--        articleinfo a left join userinfo u on a.uid=u.id-->
+    <!--    </select>-->
+    <select id="getAll" resultMap="BaseResultMap">
+        select a.*,u.username u_username,u.id u_id,u.password u_password from
+        articleinfo a left join userinfo u on a.uid=u.id
+    </select>
+
+    <select id="getArticleInfo" resultMap="BaseResultMap">
+        select * from articleinfo where 1=1
+        <if test="title!=null">
+            and title=#{title}
+        </if>
+        <if test="content!=null">
+            and content=#{content}
+        </if>
+        <if test="state!=0">
+            and state=#{state}
+        </if>
+    </select>
+    <select id="getArticleInfo2" resultType="com.example.demo.model.ArticleInfo">
+        select * from articleinfo
+        <trim prefix="where" prefixOverrides="and">
+            <if test="title!=null">
+                and title=#{title}
+            </if>
+            <if test="content!=null">
+                and content=#{content}
+            </if>
+            <if test="state!=0">
+                and state=#{state}
+            </if>
+        </trim>
+    </select>
+    <select id="getArticleInfo3" resultType="com.example.demo.model.ArticleInfo">
+        select * from articleinfo
+        <where>
+            <if test="title!=null">
+                and title=#{title}
+            </if>
+            <if test="content!=null">
+                and content=#{content}
+            </if>
+            <if test="state!=0">
+                and state=#{state}
+            </if>
+        </where>
+    </select>
+
+    <select id="detail" resultMap="BaseResultMap">
+        select a.*,u.username u_username,u.photo u_photo from articleinfo a
+        left join userinfo u on a.uid=u.id where a.id=#{id}
+    </select>
+
+
+</mapper>
