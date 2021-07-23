@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客列表</title>
+    <link rel="stylesheet" href="css/conmmon.css">
+    <link rel="stylesheet" href="css/blog_list.css">
+</head>
+
+<body>
+<!-- 导航栏 -->
+<div class="nav">
+    <img src="img/logo2.jpg" alt="">
+    <span class="title">我的博客系统</span>
+    <!-- 用来占据中间位置 -->
+    <span class="spacer"></span>
+    <a href="blog_list.html">主页</a>
+    <a href="blog_edit.html">写博客</a>
+    <!-- <a href="#">注销</a> -->
+</div>
+<!-- 版心 -->
+<div class="container">
+    <!-- 左侧个人信息 -->
+    <div class="container-left">
+        <div class="card">
+            <img id="photoimg" src="" class="avtar" alt="">
+            <h3 id="username"></h3>
+            <a href="https://github.com/fengchen98">github 地址</a>
+            <div class="counter">
+                <span>文章</span>
+            </div>
+            <div class="counter">
+                <span id="acount"></span>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧内容详情 -->
+    <div class="container-right" id="cdiv">
+        <!-- 每一篇博客包含标题, 摘要, 时间 -->
+        <!--        <div class="blog">-->
+        <!--            <div class="title">我的第一篇博客</div>-->
+        <!--            <div class="date">2021-06-02</div>-->
+        <!--            <div class="desc">-->
+        <!--                从今天起, 我要认真敲代码. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum distinctio ullam eum ut-->
+        <!--                veroab laborum numquam tenetur est in dolorum a sint, assumenda adipisci similique quaerat vel.-->
+        <!--                Facere,-->
+        <!--                et.-->
+        <!--            </div>-->
+        <!--            <a href="blog_content.html?id=1" class="detail2">查看全文 &gt;&gt;</a>-->
+        <!--            <a href="blog_content.html?id=1" class="detail2">删除</a>-->
+        <!--        </div>-->
+
+
+    </div>
+</div>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/mytools.js"></script>
+<script>
+
+
+    // 得到当前用户id
+    var uid = getParamValue("uid");
+    if (uid != null) {
+        jQuery.getJSON("/api/user/getalist", {"uid": uid}, function (data) {
+            if (data != null && data.status == 0) {
+                // 用户信息
+                var userinfo = data.data;
+                // 文章列表
+                var alist = userinfo.alist;
+                // 设置用户名
+                jQuery("#username").html(userinfo.username);
+                // 设置头像
+                jQuery("#photoimg").attr("src", userinfo.photo);
+                // 设置文章格式
+                jQuery("#acount").text(alist.length);
+
+                var contentHtml = "";
+                // 设置文章列表
+                for (var i = 0; i < alist.length; i++) {
+                    contentHtml += "<div class=\"blog\">\n" +
+                        "            <div class=\"title\">" + alist[i].title + "</div>\n" +
+                        "            <div class=\"date\">" +
+                        alist[i].createtime.substring(0, alist[i].createtime.indexOf("T"))
+                        + "</div>\n" +
+                        "            <div class=\"desc\">\n" +
+                        alist[i].content +
+                        "            </div>\n" +
+                        "            <a href=\"blog_content.html?id=" + alist[i].id + "&acount=" +
+                        alist.length
+                        + "\" class=\"detail2\">查看全文 &gt;&gt;</a>\n" +
+                        "            <a href=\"javascript:mydel(" + alist[i].id + ")\" class=\"detail2\">删除</a>\n" +
+                        "        </div>";
+                }
+                jQuery("#cdiv").html(contentHtml);
+
+                // alert("用户：" + userinfo.username + " ,发布文章数：" + alist.length);
+            }
+        });
+    }
+
+    // 删除事件
+    function mydel(id) {
+        if (confirm("确认是否删除")) {
+            // 访问后端接口进行文章删除
+            jQuery.getJSON("/api/art/del", {"id": id}, function (data) {
+                if (data != null && data.status == 0 &&
+                    data.data == 1) {
+                    // 删除成功
+                    alert("恭喜：删除数据成功！");
+                    // 刷新页面
+                    location.href = location.href;
+                } else {
+                    alert("抱歉：操作失败请重试！");
+                }
+            });
+        }
+    }
+</script>
+
+</html>

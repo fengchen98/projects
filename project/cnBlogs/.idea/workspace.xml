@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8ec6bf0-3042-4224-a0f8-f609818399a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/ArtilcleInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/ArtilcleInfoMapper.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="mybatis-mapper" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1uVlUrusTEZ3skezE80G0uieaLt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.demo.mapper" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.mapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.demo" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHub\spring\cnBlogs\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="ArtilcleInfoMapperTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.mapper.ArtilcleInfoMapperTest" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.getFullUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="getFullUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.getList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="getList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.upUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="upUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
+      <option name="ENABLE_JMX_AGENT" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserMapperTest.getFullUser" />
+        <item itemvalue="JUnit.ArtilcleInfoMapperTest.getAll" />
+        <item itemvalue="JUnit.UserMapperTest.addUser" />
+        <item itemvalue="JUnit.UserMapperTest.getList" />
+        <item itemvalue="JUnit.UserMapperTest.upUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8ec6bf0-3042-4224-a0f8-f609818399a4" name="Default Changelist" comment="" />
+      <created>1624758656710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624758656710</updated>
+      <workItem from="1624758665051" duration="4112000" />
+      <workItem from="1624763106710" duration="17150000" />
+      <workItem from="1625360821860" duration="21839000" />
+      <workItem from="1625744997324" duration="7332000" />
+      <workItem from="1626054815737" duration="6883000" />
+      <workItem from="1626073280305" duration="483000" />
+      <workItem from="1626073810165" duration="24000" />
+      <workItem from="1626073873083" duration="4516000" />
+      <workItem from="1626162038081" duration="9842000" />
+      <workItem from="1626234659973" duration="7684000" />
+      <workItem from="1626766357148" duration="4939000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="596" y="285" key="#Custom_Plugin_Repositories" timestamp="1626073328438">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="596" y="285" key="#Custom_Plugin_Repositories/0.0.1536.824@0.0.1536.824" timestamp="1626073328438" />
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1625746464244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1625746464244" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625368246288">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1625368246288" />
+    <state x="452" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624762842151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="452" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1624762842151" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1625386200474">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1625386200474" />
+    <state x="421" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1624762243420">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="421" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1624762243420" />
+    <state x="548" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1624762245914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1624762245914" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626769055010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1626769055010" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1626234491134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1626234491134" />
+    <state width="1492" height="168" key="GridCell.Tab.0.bottom" timestamp="1626526175316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1626526175316" />
+    <state width="1876" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1626079508578" />
+    <state width="1492" height="168" key="GridCell.Tab.0.center" timestamp="1626526175315">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1626526175315" />
+    <state width="1876" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1626079508578" />
+    <state width="1492" height="168" key="GridCell.Tab.0.left" timestamp="1626526175315">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1626526175315" />
+    <state width="1876" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1626079508578" />
+    <state width="1492" height="168" key="GridCell.Tab.0.right" timestamp="1626526175316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1626526175316" />
+    <state width="1876" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626079508578" />
+    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1624763156595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1624763156595" />
+    <state x="226" y="31" key="SettingsEditor" timestamp="1626163419269">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="226" y="31" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1626163419269" />
+    <state x="533" y="232" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1626344069971">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="533" y="232" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1626344069971" />
+    <state x="178" y="73" key="new project wizard" timestamp="1626224760281">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1626224760281" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1626163568117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1626163568117" />
+  </component>
+</project>
