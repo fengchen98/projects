@@ -11,7 +11,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8ec6bf0-3042-4224-a0f8-f609818399a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/ArtilcleInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/ArtilcleInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/blog_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/java/com/example/usermanager/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/java/com/example/usermanager/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/java/com/example/usermanager/model/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/java/com/example/usermanager/tools/AppFinal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/java/com/example/usermanager/tools/ResponseBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/java/com/example/usermanager/tools/SessionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/mybatis/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/images/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/js/jquery-2.1.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../usermanager/src/main/resources/static/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ArticleInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ArticleInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/ArticleInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mapper/ArticleInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blog_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blog_content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/myblog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/myblog_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/mapper/ArticleInfoMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/mapper/ArticleInfoMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/demo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ArticleInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controller/ArticleInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/mapper/ArticleInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/mapper/ArticleInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/blog_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blog_content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/myblog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/myblog_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/7019f60c-a0c6-4df3-8a01-527047c272e4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/958db7a5-1f8f-4950-88dc-abba7b3967d7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/b8e299d4-1c33-4ad0-9264-6136f1effc00.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/upload/d9d5db51-663d-400a-a122-086c8b9baeb9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/demo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/mapper/ArticleInfoMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/mapper/ArticleInfoMapperTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +69,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="mybatis-mapper" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -216,6 +261,8 @@
       <workItem from="1626162038081" duration="9842000" />
       <workItem from="1626234659973" duration="7684000" />
       <workItem from="1626766357148" duration="4939000" />
+      <workItem from="1627009489402" duration="4766000" />
+      <workItem from="1627097481312" duration="705000" />
     </task>
     <servers />
   </component>
@@ -271,25 +318,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1626234491134" />
-    <state width="1492" height="168" key="GridCell.Tab.0.bottom" timestamp="1626526175316">
+    <state width="1492" height="168" key="GridCell.Tab.0.bottom" timestamp="1627028119980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1626526175316" />
+    <state width="1492" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627028119980" />
     <state width="1876" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1626079508578" />
-    <state width="1492" height="168" key="GridCell.Tab.0.center" timestamp="1626526175315">
+    <state width="1492" height="168" key="GridCell.Tab.0.center" timestamp="1627028119980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1626526175315" />
+    <state width="1492" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1627028119980" />
     <state width="1876" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1626079508578" />
-    <state width="1492" height="168" key="GridCell.Tab.0.left" timestamp="1626526175315">
+    <state width="1492" height="168" key="GridCell.Tab.0.left" timestamp="1627028119980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1626526175315" />
+    <state width="1492" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1627028119980" />
     <state width="1876" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1626079508578" />
-    <state width="1492" height="168" key="GridCell.Tab.0.right" timestamp="1626526175316">
+    <state width="1492" height="168" key="GridCell.Tab.0.right" timestamp="1627028119980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1626526175316" />
+    <state width="1492" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1627028119980" />
     <state width="1876" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1626079508578" />
     <state x="349" y="147" key="IDE.errors.dialog" timestamp="1624763156595">
       <screen x="0" y="0" width="1536" height="824" />
@@ -303,10 +350,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="533" y="232" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1626344069971" />
-    <state x="178" y="73" key="new project wizard" timestamp="1626224760281">
+    <state x="178" y="73" key="new project wizard" timestamp="1627028104442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1626224760281" />
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1627028104442" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1626163568117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

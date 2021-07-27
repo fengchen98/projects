@@ -26,7 +26,7 @@ public interface ArticleInfoMapper {
                                              String content,
                                              int state);
 
-    public int upArticle(int id, String title, String content);
+    public int upArticle(ArticleInfo articleInfo );
 
     public int delArticleByIds(int[] ids);
 

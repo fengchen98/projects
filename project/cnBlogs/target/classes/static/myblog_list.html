@@ -28,7 +28,7 @@
         <div class="card">
             <img id="photoimg" src="" class="avtar" alt="">
             <h3 id="username"></h3>
-            <a href="https://github.com/fengchen98">github 地址</a>
+            <a href="http:www.github.com">github 地址</a>
             <div class="counter">
                 <span>文章</span>
             </div>
@@ -94,6 +94,8 @@
                         alist.length
                         + "\" class=\"detail2\">查看全文 &gt;&gt;</a>\n" +
                         "            <a href=\"javascript:mydel(" + alist[i].id + ")\" class=\"detail2\">删除</a>\n" +
+                        "            <a href=\"blog_update.html?id=" + alist[i].id + "&uid=" +
+                        uid + "\" class=\"detail2\">修改</a>\n" +
                         "        </div>";
                 }
                 jQuery("#cdiv").html(contentHtml);

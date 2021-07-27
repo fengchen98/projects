@@ -52,4 +52,9 @@ public class ArticleInfoController {
         return articleInfo;
     }
 
+    @RequestMapping("/up")
+    public int up(ArticleInfo articleInfo) {
+        return articleInfoMapper.upArticle(articleInfo);
+    }
+
 }

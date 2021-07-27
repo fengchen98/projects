@@ -48,11 +48,7 @@ class ArticleInfoMapperTest {
         list.forEach(System.out::println);
     }
 
-    @Test
-    void upArticle() {
-        int result = articleInfoMapper.upArticle(3, "今天星期一", null);
-        System.out.println(result);
-    }
+
 
     @Test
     void delArticleByIds() {
