@@ -156,4 +156,12 @@ public class UserController {
         return new ResponseBody<>(0, "", result);
     }
 
+    //删除多条数据
+    @RequestMapping("/dels")
+    public ResponseBody<Integer> dels(String ids){
+        int result=0;
+        result=userMapper.dels(ids.split(","));
+        return new ResponseBody<>(0,"",result);
+    }
+
 }

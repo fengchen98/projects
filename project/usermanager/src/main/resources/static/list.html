@@ -40,7 +40,7 @@
     </div>
     <div style="float: right;margin-bottom: 15px">
         <a class="btn btn-primary" href="add.html">添加用户</a>
-        <a id="delete" class="btn btn-primary" href="javascript:del()">删除选中</a>
+        <a id="delete" class="btn btn-primary" href="javascript:delSel()">删除选中</a>
     </div>
     <table border="1" class="table table-bordered table-hover">
         <tr class="success">
@@ -192,6 +192,7 @@
     }
     getData();
 
+    //单条删除
     function del(id) {
         if (confirm("是否进行删除？")) {
             jQuery.getJSON("/user/del", {"id": id}, function (result) {
@@ -205,6 +206,38 @@
             });
         }
     }
+
+    //删除多条信息
+    function delSel() {
+        if (confirm("是否确认删除？")){
+            //1、获取需要删除的用户的id
+            var ids="";
+            jQuery("#info").find("tr").each(function (i) {
+                if (jQuery(this).find("th:first").find("input").prop("checked")==true){
+                    ids += (jQuery(this).find("th:first").find("input").attr("id") + ",");
+                }
+            });
+            if (ids!=null){
+                //2、后端接口进行删除操作
+                jQuery.getJSON("/user/dels",{"ids":ids},function (result) {
+                    if (result!=null && result.status ==0 && result.data>0){
+                        alert("删除成功！");
+                        location.href=location.href;
+                    }else {
+                        alert("抱歉，操作失败，请重试！")
+                    }
+
+                })
+            }else {
+                alert("请先选择要删除的数据！");
+            }
+
+
+        }
+
+    }
+
+
 
     
 
