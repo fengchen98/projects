@@ -1,12 +1,21 @@
 package com.example.demo.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+
 
 @Configuration
 public class AppConfig implements WebMvcConfigurer {
+    //读取配置文件中的变量信息
+    @Value("${myimgpath}")
+    private String imgpath;
+
+
     @Override
     public void configurePathMatch(PathMatchConfigurer configurer) {
         configurer.addPathPrefix("api", c -> true);
@@ -28,5 +37,11 @@ public class AppConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/reg_success.html")
                 .excludePathPatterns("/reg_err.html")
                 .excludePathPatterns("/**/*.png");
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/images/**")
+                .addResourceLocations("file:"+imgpath);
     }
 }

@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.mapper.ArticleInfoMapperTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 6.462 s <<< FAILURE! - in com.example.demo.mapper.ArticleInfoMapperTest
+getAll  Time elapsed: 1.326 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+
+delArticleByIds  Time elapsed: 1.032 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+
+getArticleInfo  Time elapsed: 1.022 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+
+addArticle  Time elapsed: 1.005 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+
+getArticleInfo2  Time elapsed: 1.032 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+
+getArticleInfo3  Time elapsed: 1.028 s  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+

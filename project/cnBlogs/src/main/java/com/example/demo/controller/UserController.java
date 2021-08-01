@@ -157,7 +157,7 @@ public class UserController {
 //        String path = ClassUtils.getDefaultClassLoader().
 //                getResource("static").getPath();
         String path = imgpath;
-        path += AppFinal.IMAGE_PAHT;
+        //path += AppFinal.IMAGE_PAHT;
         log.info("path:" + path);
         // 2.文件名（全局唯一id【UUID】）+文件的原始类型
         String fileType = file.getOriginalFilename(); // img.png
@@ -174,7 +174,7 @@ public class UserController {
         int result = userMapper.addUser(user);
         if (result > 0) {
             // 操作成功
-            return "redirect:/reg_success.html";
+            return "redirect:/login.html";
         } else {
             return "redirect:/reg_err.html";
         }

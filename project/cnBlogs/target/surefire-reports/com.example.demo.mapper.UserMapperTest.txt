@@ -1,0 +1,224 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.mapper.UserMapperTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 10.181 s <<< FAILURE! - in com.example.demo.mapper.UserMapperTest
+getAll  Time elapsed: 1.012 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getAll(UserMapperTest.java:44)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getAll
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getAll(UserMapperTest.java:44)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getAll(UserMapperTest.java:44)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getAll(UserMapperTest.java:44)
+
+addUser  Time elapsed: 1.02 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.addUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.addUser(UserMapperTest.java:24)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.addUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.addUser(UserMapperTest.java:24)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.addUser(UserMapperTest.java:24)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.addUser(UserMapperTest.java:24)
+
+getFullUser  Time elapsed: 1.012 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getFullUser
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getFullUser(UserMapperTest.java:86)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getFullUser
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getFullUser(UserMapperTest.java:86)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getFullUser(UserMapperTest.java:86)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getFullUser(UserMapperTest.java:86)
+
+upUser  Time elapsed: 1.02 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.upUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.upUser(UserMapperTest.java:56)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.upUser
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.upUser(UserMapperTest.java:56)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.upUser(UserMapperTest.java:56)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.upUser(UserMapperTest.java:56)
+
+getListByName  Time elapsed: 1.027 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getListByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getListByName(UserMapperTest.java:72)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getListByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getListByName(UserMapperTest.java:72)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getListByName(UserMapperTest.java:72)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getListByName(UserMapperTest.java:72)
+
+getList  Time elapsed: 1.026 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getList(UserMapperTest.java:62)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getList
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getList(UserMapperTest.java:62)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getList(UserMapperTest.java:62)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getList(UserMapperTest.java:62)
+
+getListByName2  Time elapsed: 1.008 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getListByName2
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getListByName2(UserMapperTest.java:80)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getListByName2
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getListByName2(UserMapperTest.java:80)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getListByName2(UserMapperTest.java:80)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getListByName2(UserMapperTest.java:80)
+
+delById  Time elapsed: 1.029 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.delById
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.delById(UserMapperTest.java:50)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.delById
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.delById(UserMapperTest.java:50)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.delById(UserMapperTest.java:50)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.delById(UserMapperTest.java:50)
+
+getUserById  Time elapsed: 1.006 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getUserById
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getUserById(UserMapperTest.java:32)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getUserById
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getUserById(UserMapperTest.java:32)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getUserById(UserMapperTest.java:32)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getUserById(UserMapperTest.java:32)
+
+getUserByNameAndPassword  Time elapsed: 1.014 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getUserByNameAndPassword
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getUserByNameAndPassword(UserMapperTest.java:38)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+### The error may exist in file [E:\GitHub\project\cnBlogs\target\classes\mapper\UserMapper.xml]
+### The error may involve com.example.demo.mapper.UserMapper.getUserByNameAndPassword
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getUserByNameAndPassword(UserMapperTest.java:38)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getUserByNameAndPassword(UserMapperTest.java:38)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.example.demo.mapper.UserMapperTest.getUserByNameAndPassword(UserMapperTest.java:38)
+
