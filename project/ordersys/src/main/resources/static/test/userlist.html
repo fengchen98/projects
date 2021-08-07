@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="../js/jquery-2.1.0.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <v-simple-table>
+        <template>
+            <thead>
+            <tr>
+                <th class="text-left">序号</th>
+                <th class="text-left">用户名</th>
+                <th class="text-left">是否管理员</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="user in userlist">
+                <td>{{user.id}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.isadmin==0?'否':'是'}}</td>
+            </tr>
+            </tbody>
+        </template>
+    </v-simple-table>
+
+    <v-btn v-on:click="upData">点击</v-btn>
+
+</div>
+</body>
+<script>
+    let app = new Vue({
+        el:"#app",
+        data:{
+            userlist:[
+                // {"id":1,"username":"唐僧","isadmin":1},
+                // {"id":2,"username":"猪八戒","isadmin":0},
+                // {"id":3,"username":"沙僧","isadmin":0}
+            ]
+        },
+        methods:{
+            upData(){
+                alert("点击了js");
+                app.userlist[0].username = "唐僧僧";
+            },
+            init(){
+                jQuery.getJSON("/user/ulist",{},function (result) {
+                    if(result!=null && result.data!=null){
+                        app.userlist = result.data;
+                    }
+                });
+            }
+        }
+    });
+    app.init();
+</script>
+</html>

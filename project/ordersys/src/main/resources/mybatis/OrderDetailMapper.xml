@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ordersys.mapper.OrderDetailMapper">
+    <resultMap id="BaseResultMap" type="com.example.ordersys.model.OrderDetail">
+        <result property="did" column="did"></result>
+        <result property="oid" column="oid"></result>
+        <association property="dish" columnPrefix="d_" resultMap="com.example.ordersys.mapper.DishMapper.BaseResultMap">
+        </association>
+    </resultMap>
+    <insert id="add">
+        insert into orderdetail(oid,did) values
+        <foreach collection="dids" item="item" separator=",">
+            (#{oid},#{item})
+        </foreach>
+    </insert>
+    <select id="getList" resultMap="BaseResultMap">
+        select o.*,d.name d_name,d.price d_price from orderdetail o left join dish d on o.did=d.id
+        where o.oid=#{oid}
+    </select>
+</mapper>
